@@ -27,6 +27,12 @@ The queries report counts and numeric rates so the results can be sorted or char
 - Work-life-balance responses by job role.
 - Average working years and performance rating by department and attrition outcome.
 
+## Preview
+
+This aggregated preview is recomputed from the workbook's `final project` sheet. It is not a captured Power BI or Tableau screen and contains no employee-level rows. The workbook export contains 50,000 unique employee IDs and reports 50.2% overall attrition; verify the dataset's source and preparation before treating these rates as representative workforce findings.
+
+![Aggregated workforce and attrition preview](screenshots/workforce-overview.png)
+
 ## Interpretation limits
 
-These are descriptive summaries of the supplied employee dataset. They do not show that any factor causes attrition, predict an individual employee's behavior, or justify employment decisions. Results depend on how the source workbook was prepared, how its tables were joined, and how categories were defined.
+These are descriptive summaries of the supplied employee dataset. They do not show that any factor causes attrition, predict an individual employee's behavior, or justify employment decisions. Results depend on the source data's provenance, how the workbook was prepared, how its tables were joined, and how categories were defined.
