@@ -1,33 +1,32 @@
 # HR Analytics
 
-An HR analytics project focused on analyzing employee data, workforce trends, and key HR metrics using multiple data analysis and visualization tools.
+A workforce analytics project using SQL, Excel, Power BI, Tableau, and a presentation to explore headcount, employee attrition, and workforce patterns.
 
-## Tools & Technologies
+## Project files
 
-- Microsoft Excel
-- SQL
-- Power BI
-- Tableau
-- Microsoft PowerPoint
+- [`HR Analytics/final proj.xlsb`](HR%20Analytics/final%20proj.xlsb) — Excel analysis workbook.
+- [`HR Analytics/Hr SQL Project.sql`](HR%20Analytics/Hr%20SQL%20Project.sql) — MySQL 8+ data-quality checks and workforce analyses.
+- [`HR Analytics/finalbi.pbix`](HR%20Analytics/finalbi.pbix) — Power BI dashboard.
+- [`HR Analytics/HR ANALYTICS.twbx`](HR%20Analytics/HR%20ANALYTICS.twbx) — packaged Tableau workbook.
+- [`HR Analytics/HR ANALYSIS ppt.pptx`](HR%20Analytics/HR%20ANALYSIS%20ppt.pptx) — project presentation.
 
-## Project Work
+## Run the SQL analysis
 
-- HR data analysis
-- Employee and workforce analysis
-- Data cleaning and preparation
-- SQL-based HR analysis
-- Interactive dashboard development
-- Data visualization
-- Presentation of HR insights
+1. Import the workbook data into a MySQL 8+ database, keeping the employee attributes in `hr_1` and the additional measures in `hr_2`.
+2. Confirm `hr_1.EmployeeNumber` and `hr_2.Employee ID` identify the same employees. The script starts with a duplicate and join-coverage check.
+3. Remove any UTF-8 byte-order mark from imported headers so fields are named `Age` and `Employee ID`.
+4. Run `HR Analytics/Hr SQL Project.sql` in MySQL Workbench.
 
-## Project Files
+The queries report counts and numeric rates so the results can be sorted or charted. The work-life-balance response labels are 1 = Bad, 2 = Good, 3 = Better, and 4 = Best.
 
-- `final proj.xlsb` — Excel analysis and data work
-- `Hr SQL Project.sql` — SQL queries used for HR analysis
-- `finalbi.pbix` — Power BI dashboard
-- `HR ANALYTICS.twbx` — Tableau workbook
-- `HR ANALYSIS ppt.pptx` — Project presentation
+## Analysis included
 
-## Objective
+- Overall headcount and attrition rate.
+- Department, age, gender, and travel-segment attrition rates.
+- Attrition by monthly-income band and time since last promotion.
+- Work-life-balance responses by job role.
+- Average working years and performance rating by department and attrition outcome.
 
-The project demonstrates the use of Excel, SQL, Power BI, and Tableau to analyze HR data, identify workforce trends, and present meaningful insights through dashboards and visualizations.
+## Interpretation limits
+
+These are descriptive summaries of the supplied employee dataset. They do not show that any factor causes attrition, predict an individual employee's behavior, or justify employment decisions. Results depend on how the source workbook was prepared, how its tables were joined, and how categories were defined.
