@@ -31,7 +31,17 @@ The queries report counts and numeric rates so the results can be sorted or char
 
 This aggregated preview is recomputed from the workbook's `final project` sheet. It is not a captured Power BI or Tableau screen and contains no employee-level rows. The workbook export contains 50,000 unique employee IDs and reports 50.2% overall attrition; verify the dataset's source and preparation before treating these rates as representative workforce findings.
 
+### Workforce overview
+
 ![Aggregated workforce and attrition preview](screenshots/workforce-overview.png)
+
+### Attrition by age band
+
+![Aggregated attrition by age band](screenshots/attrition-by-age.png)
+
+### Attrition by income band
+
+![Aggregated attrition by monthly income band](screenshots/attrition-by-income.png)
 
 ## Interpretation limits
 
